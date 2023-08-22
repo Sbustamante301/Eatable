@@ -1,0 +1,20 @@
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b8b8bb;
+}
+
+.mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 32.125rem;
+  height: 56rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 0.25rem 1.875rem rgb(0 0 0/6%);
+  background: #f6f6f9;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}

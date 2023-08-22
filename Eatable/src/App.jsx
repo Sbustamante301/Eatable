@@ -10,7 +10,7 @@ function App() {
   return (
     <main className={styles.center}>
       <div className={styles.mobile}>
-        <LoadingScreen />
+        <Form />
       </div>
     </main>
   );

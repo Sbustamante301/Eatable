@@ -21,7 +21,7 @@ const authenticationForm = () => {
             marginBottom: "2rem",
           }}
         >
-          <Logo />
+          <Logo margin="10rem" />
           <div
             style={{
               display: "flex",

@@ -1,7 +1,8 @@
 import eatable from "../assets/eatable.svg";
 import foodforeveryone from "../assets/food4.svg";
 
-const Logo = () => {
+const Logo = (props) => {
+  const { margin } = props;
   return (
     <div
       style={{
@@ -10,11 +11,15 @@ const Logo = () => {
         gap: "1rem",
         alignItems: "center",
         justifyContent: "center",
-        margin: "10rem",
+        margin: margin,
       }}
     >
       <img
-        style={{ width: "11.2805rem", height: "3.125rem", flexShrink: "1" }}
+        style={{
+          width: "11.2805rem",
+          height: "3.125rem",
+          flexShrink: "1",
+        }}
         src={eatable}
         alt="imagen eatable"
       />

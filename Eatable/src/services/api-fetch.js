@@ -1,50 +1,50 @@
-import { tokenKey, BASE_URI } from "../../vite.config";
+// import { tokenKey, BASE_URI } from "../../vite.config";
 
-export default async function apiFetch(
-  endpoint,
-  { method, headers, body } = {}
-) {
-  const token = sessionStorage.getItem(tokenKey);
-  console.log(token);
-  // const token = "W4SnNS3jsk5kgCD5mFVdeXRC";
+// export default async function apiFetch(
+//   endpoint,
+//   { method, headers, body } = {}
+// ) {
+//   const token = sessionStorage.getItem(tokenKey);
+//   console.log(token);
+//   // const token = "W4SnNS3jsk5kgCD5mFVdeXRC";
 
-  if (token) {
-    headers = {
-      Authorization: `Bearer ${token}`,
-      ...headers,
-    };
-  }
+//   if (token) {
+//     headers = {
+//       Authorization: `Bearer ${token}`,
+//       ...headers,
+//     };
+//   }
 
-  if (body) {
-    headers = {
-      "Content-Type": "application/json",
-      ...headers,
-    };
-  }
+//   if (body) {
+//     headers = {
+//       "Content-Type": "application/json",
+//       ...headers,
+//     };
+//   }
 
-  const config = {
-    method: method || (body ? "POST" : "GET"),
-    headers,
-    body: body ? JSON.stringify(body) : null,
-  };
+//   const config = {
+//     method: method || (body ? "POST" : "GET"),
+//     headers,
+//     body: body ? JSON.stringify(body) : null,
+//   };
 
-  const response = await fetch(BASE_URI + endpoint, config);
+//   const response = await fetch(BASE_URI + endpoint, config);
 
-  let data;
-  if (!response.ok) {
-    try {
-      data = await response.json();
-    } catch (error) {
-      throw new Error(response.statusText);
-    }
-    throw new Error(data.errors);
-  }
+//   let data;
+//   if (!response.ok) {
+//     try {
+//       data = await response.json();
+//     } catch (error) {
+//       throw new Error(response.statusText);
+//     }
+//     throw new Error(data.errors);
+//   }
 
-  try {
-    data = await response.json();
-  } catch (error) {
-    data = response.statusText;
-  }
+//   try {
+//     data = await response.json();
+//   } catch (error) {
+//     data = response.statusText;
+//   }
 
-  return data;
-}
+//   return data;
+// }

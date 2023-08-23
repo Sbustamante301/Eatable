@@ -1,3 +1,16 @@
+.loadingContainer {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.25rem;
+  box-shadow: 0 0.25rem 1.8775rem rgb(0 0 0/6%);
+  background-image: url("../assets/eatableimage.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .circumference {
   padding-top: 2rem;
   width: 2rem;

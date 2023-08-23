@@ -1,58 +1,33 @@
 import Input from "../components/input";
 import Button from "../components/button";
 import Logo from "../components/logo";
+import styles from "../styles/form.module.css";
+import { useState } from "react";
 const authenticationForm = () => {
+  const [activeButton, setActiveButton] = useState("");
+
+  const handleButtonClick = (button) => {
+    setActiveButton(button);
+  };
   return (
     <>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          gap: "1.25rem",
-          alignItems: "center",
-        }}
-      >
-        <header
-          style={{
-            width: "32.125rem",
-            height: "27rem",
-            borderRadius: "1.875rem",
-            backgroundColor: "#FFFFFF",
-            marginBottom: "2rem",
-          }}
-        >
+      <div className={styles.containerForm}>
+        <header className={styles.header}>
           <Logo margin="10rem" />
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              gap: "8.1875rem",
-              alignItems: "center",
-              justifyContent: "center",
-              marginTop: "10rem",
-              fontWeight: "600",
-              fontfamily: "Source Sans Pro",
-            }}
-          >
+          <div className={styles.buttonsContainer}>
             <h1
-              style={{
-                color: "#000",
-                /* SemiBold/M */
-
-                fontSize: "1.125rem",
-                fontWeight: "37.5rem",
-                cursor: "pointer",
-              }}
+              className={`${styles.login} ${
+                activeButton === "login" ? styles.active__button : ""
+              } `}
+              onClick={() => handleButtonClick("login")}
             >
               Login
             </h1>
             <h1
-              style={{
-                color: "#000",
-                /* SemiBold/M */
-                fontSize: "1.125rem",
-                cursor: "pointer",
-              }}
+              className={`${styles.signup} ${
+                activeButton === "signup" ? styles.active__button : ""
+              } `}
+              onClick={() => handleButtonClick("signup")}
             >
               Sign Up
             </h1>
@@ -68,7 +43,10 @@ const authenticationForm = () => {
           placeholder={"********"}
           textType={"password"}
         />
-        <Button style={{ marginTop: "6.25rem" }} title={"Login"} />
+        <Button
+          style={{ marginTop: "6.25rem" }}
+          title={activeButton === "login" ? "Login" : "Sign Up"}
+        />
       </div>
     </>
   );

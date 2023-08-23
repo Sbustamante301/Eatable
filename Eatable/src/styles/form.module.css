@@ -1,0 +1,55 @@
+.containerForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.header {
+  width: 32.125rem;
+  height: 27rem;
+  border-radius: 1.875rem;
+  background-color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.buttonsContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 8.1875rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10rem;
+  font-weight: 600;
+  font-family: Source Sans Pro;
+}
+
+.login {
+  color: #000;
+  font-size: 1.125rem;
+  font-weight: 37.5rem;
+  cursor: pointer;
+}
+
+.signup {
+  color: #000;
+  /* SemiBold/M */
+  font-size: 1.125rem;
+  cursor: pointer;
+}
+
+.active__button {
+  position: relative;
+}
+
+.active__button::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: calc(50% - 50px);
+  width: 100px;
+  height: 0.1875rem;
+  background-color: #fa4a0c;
+  border-radius: 10px;
+  transform: translateY(9.5px);
+}

@@ -5,7 +5,7 @@ const LoadingScreen = () => {
     <div className={styles.loadingContainer}>
       <div className={styles.logoContainer}>
         <Logo />
-        {/* <span className={styles.circumference}></span> */}
+        <span className={styles.circumference}></span>
       </div>
     </div>
   );

@@ -5,6 +5,3 @@ import react from "@vitejs/plugin-react-swc";
 export default defineConfig({
   plugins: [react()],
 });
-
-export const tokenKey = "react_eatable";
-export const BASE_URI = "https://react-eatable-api.herokuapp.com";

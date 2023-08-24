@@ -11,7 +11,7 @@
   justify-content: center;
   margin: 0 auto;
   width: 32.125rem;
-  height: 56rem;
+  height: auto;
   border-radius: 1.25rem;
   box-shadow: 0 0.25rem 1.875rem rgb(0 0 0/6%);
   background: #f6f6f9;

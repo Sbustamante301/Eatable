@@ -1,0 +1,42 @@
+.cardContainer {
+  width: 11.25rem;
+  height: 14.375rem;
+  border: 0.0625rem solid transparent;
+  background-color: #ffffff;
+  border-radius: 1.875rem;
+  box-shadow: 0 0.25rem 1.875rem rgb(0 0 0/6%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+}
+
+.cardImg {
+  width: 9.75rem;
+  height: 9.75rem;
+  clip-path: circle(50%);
+  box-shadow: 0 0.25rem 1.875rem rgb(0 0 0/6%);
+  position: absolute;
+  top: -30%;
+}
+
+.title {
+  color: #333;
+  text-align: center;
+  font-family: Source Sans Pro;
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 50;
+  margin-top: 5rem;
+}
+
+.price {
+  color: var(--orange, #fa4a0c);
+  text-align: center;
+  font-family: Source Sans Pro;
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 50;
+}

@@ -10,8 +10,10 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  width: 32.125rem;
-  height: auto;
+  /* width: 32.125rem;
+  height: auto; */
+  width: 414px;
+  height: 896px;
   border-radius: 1.25rem;
   box-shadow: 0 0.25rem 1.875rem rgb(0 0 0/6%);
   background: #f6f6f9;

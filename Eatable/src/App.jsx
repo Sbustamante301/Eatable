@@ -6,6 +6,7 @@ import Input from "./components/input";
 import Form from "./pages/form";
 import Products from "./pages/products";
 import ProductCard from "./components/productCard";
+import Counter from "./components/counter";
 function App() {
   const [showView, setShowView] = useState(true);
 
@@ -19,7 +20,7 @@ function App() {
   return (
     <main className={styles.center}>
       <div className={styles.mobile}>
-        {showView ? <LoadingScreen /> : <Products />}
+        {showView ? <LoadingScreen /> : <Counter />}
       </div>
     </main>
   );

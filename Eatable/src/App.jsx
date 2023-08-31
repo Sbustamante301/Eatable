@@ -7,6 +7,8 @@ import Form from "./pages/form";
 import Products from "./pages/products";
 import ProductCard from "./components/productCard";
 import Counter from "./components/counter";
+import eatable from "./assets/foodcartimage.svg";
+import CardItem from "./components/cardItem";
 function App() {
   const [showView, setShowView] = useState(true);
 
@@ -20,7 +22,7 @@ function App() {
   return (
     <main className={styles.center}>
       <div className={styles.mobile}>
-        {showView ? <LoadingScreen /> : <Counter />}
+        {showView ? <LoadingScreen /> : <CardItem />}
       </div>
     </main>
   );

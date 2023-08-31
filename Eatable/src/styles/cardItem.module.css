@@ -1,0 +1,44 @@
+.itemContainer {
+  width: 19.6875rem;
+  height: 6.375rem;
+  border-radius: 1.25rem;
+  background-color: #fff;
+  box-shadow: 0rem 0.625rem 2.5rem 0rem rgba(0, 0, 0, 0.03);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.itemImg {
+  width: 3.875rem;
+  height: 3.875rem;
+  clip-path: circle(50%);
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.title {
+  color: var(--black, #333);
+  text-align: center;
+  /* SemiBold/S */
+  font-family: Source Sans Pro;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.price {
+  color: #fa4a0c;
+  font-family: Source Sans Pro;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
